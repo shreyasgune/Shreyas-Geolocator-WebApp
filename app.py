@@ -8,8 +8,8 @@ urls = ("/","Index","/geolocate","Index"
                     )
 app = web.application(urls, globals())
 
-# render = web.template.render('templates/')
-render = web.template.render('c:/opppo/pynetwork/webapp/templates/')
+render = web.template.render('templates/')
+# render = web.template.render('c:/opppo/pynetwork/webapp/templates/')
 class Index(object):
     def GET(self):
         return render.geo_form()
