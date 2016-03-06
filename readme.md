@@ -17,24 +17,25 @@ This is where it might get tricky. Now, if you are running a local copy of this 
 I coded this and ran this on Windows. I could've VBOX'd it but I knew it was going to be a bigger challenge doing it on Windows. 
 
 Make sure you have all these installed : 
-'''
+
+```
 web.py==0.37
 Jinja2==2.6
 Werkzeug==0.8.3
 gunicorn==0.14.2
 wsgiref==0.1.2
-'''
+```
 
 In Windows ::
 Make sure you make these changes, else routing and template rendering wont work.
-'render = web.template.render('<Your Full Path>/<yourapp>/templates/')'
+`render = web.template.render('<Your Full Path>/<yourapp>/templates/')`
 
 else keep it this :
-'render = web.template.render('templates')'
-and for the love of everything that means dear to you, don't do this  : 'render = web.template.render('\templates')' That slash was so problematic. 
+`render = web.template.render('templates')`
+and for the love of everything that means dear to you, don't do this  : `render = web.template.render('\templates')` That slash was so problematic. 
 
-To run the server : 'python app.py <PORTNUMBER>' from your Terminal
-To Close the server : Ctrl+C OR Ctrl+Z 
+To run the server : `python app.py <PORTNUMBER>` from your Terminal
+To Close the server : `Ctrl+C OR Ctrl+Z`
 
 ## API Reference
 Mostly Google APIs : Fonts , Geolocation and Mapping. They've made things really easy. The more I do these projects, the more I learn how nifty their APIs are.
